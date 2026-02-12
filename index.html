@@ -230,9 +230,6 @@ button:hover {
 let emojis = document.querySelectorAll(".emoji");
 let current = 0;
 
-    setTimeout(function() {
-    document.getElementById("gift").style.display = "block";
-  }, 2000); 
 setInterval(() => {
     emojis[current].classList.remove("active");
     current = (current + 1) % emojis.length;
