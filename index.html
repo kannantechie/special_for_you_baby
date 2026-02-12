@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BABY ILU ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BODY */
+body {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* CONTAINER */
+.container {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* SLIDESHOW */
+.emoji-slideshow {
+    position: relative;
+    width: 95%;
+    max-width: 350px;
+    height: 250px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.15);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+
+.emoji {
+    position: absolute;
+    width: 170px;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.emoji.active {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* BUTTONS */
+button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    color: #ff4e50;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* PROPOSAL */
+.proposal {
+    margin-top: 40px;
+    display: none;
+}
+
+.ring {
+    font-size: 60px;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* SURPRISE SCREEN */
+.surprise {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 999;
+    animation: fadeIn 1.5s forwards;
+    padding: 20px;
+    text-align: center;
+}
+
+.surprise h2 {
+    font-size: 42px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 15px;
+}
+
+.love-quotes {
+    margin-top: 30px;
+    font-size: 18px;
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+/* FADE */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* FLOATING HEARTS */
+.heart {
+    position: fixed;
+    bottom: -20px;
+    width: 40px;
+    animation: floatUp linear forwards;
+    pointer-events: none;
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+}
+
+/* BUTTERFLY */
+.butterfly {
+    position: fixed;
+    width: 60px;
+    pointer-events: none;
+    z-index: 1000;
+    animation: flyAcross linear forwards;
+}
+
+@keyframes flyAcross {
+    0% {
+        transform: translateX(-10vw) translateY(80vh) scale(0.8) rotate(0deg);
+        opacity: 1;
+    }
+    25% {
+        transform: translateX(30vw) translateY(50vh) scale(1) rotate(15deg);
+    }
+    50% {
+        transform: translateX(60vw) translateY(60vh) scale(1.1) rotate(-10deg);
+    }
+    75% {
+        transform: translateX(80vw) translateY(40vh) scale(1) rotate(10deg);
+    }
+    100% {
+        transform: translateX(110vw) translateY(20vh) scale(0.9) rotate(0deg);
+        opacity: 0;
+    }
+}
+
+@media(max-width:600px) {
+    h1 { font-size: 34px; }
+    .emoji { width: 100px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Happy Valentine's Day My Love ❤️</h1>
+
+    <div class="emoji-slideshow">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMW5hdzRzZ3JpNHd4azhnd2h0c3BodmhxdzJuMXpma3dnZzR1YXF0ciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7HdytY2FAUBKUf6T1w/giphy.gif" class="emoji active">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExamZxZHdmMTBrbXlueXl6a3hsbXl3c2t2d2VlNGF4OWw2Y3kwN3A1YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yZ7Xya4covzN1WhOAa/giphy.gif" class="emoji">
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGVyNmZ1bWdqYnVwbTA5dW55M21xZXdqcjFoYmt2enNhOHptYXdwcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Y9bboRSDSw0CezsCji/giphy.gif" class="emoji">
+         <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXYzajg2eTc1OGdqNGRuYjJ4Z25tY3dudTA5a2R2NWQza2MxMGZ0cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QEN54dmAJuTF0wBWXz/giphy.gif" class="emoji"> 
+ </div>
+
+    <button onclick="showProposal()">I Have Something To Ask You ❤️😍</button>
+
+    <div class="proposal" id="proposal">
+        <div class="ring">💍</div>
+        <h2>Will You Be Mine Forever?</h2>
+        <button onclick="sayYes()">YES ❤️</button>
+        <button onclick="moveNo(this)">NO 😜</button>
+    </div>
+</div>
+
+<div class="surprise" id="surprise">
+    <h2>You Said YES😍BABY</h2>
+    <p>I promise to love you forever and always ❤️</p>
+    <h3>You're My Forever 🥰</h3>
+<div class="love-quotes">
+    <p>💖 "Every love story is beautiful, but ours is my favorite."</p>
+    <p>🌹 "With you, every moment feels like magic."</p>
+    <p>💞 "I found my home in your heart."</p>
+    <p>✨ "Forever isn't long enough with you."</p>
+    <p>💌 "You are my today and all of my tomorrows."</p>
+    <p>🌸 "I didn’t choose you… my heart did."</p>
+    <p>💫 "My heart beats for you, now and always."</p>
+    <p>🥰 "You’re the reason I believe in love."</p>
+</div>
+
+</div>
+
+<script>
+let emojis = document.querySelectorAll(".emoji");
+let current = 0;
+
+setInterval(() => {
+    emojis[current].classList.remove("active");
+    current = (current + 1) % emojis.length;
+    emojis[current].classList.add("active");
+}, 2000);
+
+function showProposal() {
+    document.getElementById("proposal").style.display = "block";
+}
+
+function sayYes() {
+    document.getElementById("surprise").style.display = "flex";
+
+    const heartGifs = [
+        "https://media.giphy.com/media/xT9IgG50Fb7Mi0prBC/giphy.gif",
+        "https://media.giphy.com/media/3o6Zt6ML6BklcajjsA/giphy.gif"
+    ];
+
+    // Floating Hearts
+    for (let i = 0; i < 30; i++) {
+        let heart = document.createElement("img");
+        heart.src = heartGifs[Math.floor(Math.random() * heartGifs.length)];
+        heart.className = "heart";
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
+        document.body.appendChild(heart);
+        setTimeout(() => heart.remove(), 6000);
+    }
+
+    // Flying Butterflies
+    for (let i = 0; i < 8; i++) {
+        let butterfly = document.createElement("img");
+        butterfly.src = "https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif";
+        butterfly.className = "butterfly";
+        butterfly.style.animationDuration = (Math.random() * 5 + 8) + "s";
+        butterfly.style.animationDelay = Math.random() * 3 + "s";
+        document.body.appendChild(butterfly);
+        setTimeout(() => butterfly.remove(), 13000);
+    }
+}
+
+function moveNo(btn) {
+    btn.style.position = "absolute";
+    btn.style.top = Math.random() * 80 + "%";
+    btn.style.left = Math.random() * 80 + "%";
+}
+</script>
+
+</body>
+</html>
